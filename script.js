@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const errorMessage = document.getElementById('error-message');
 
     // Profile elements
+    
     const profileAvatar = document.getElementById('profile-avatar');
     const profileName = document.getElementById('profile-name');
     const profileBio = document.getElementById('profile-bio');
