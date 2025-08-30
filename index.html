@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Profile Analyzer</h1>
+        <div class="search-box">
+            <input type="text" id="username-input" placeholder="Enter GitHub username">
+            <button id="search-button">Analyze</button>
+        </div>
+        
+        <div id="profile-card" class="hidden">
+            <div class="profile-header">
+                <img id="profile-avatar" src="" alt="User Avatar">
+                <div class="profile-info">
+                    <h2 id="profile-name"></h2>
+                    <p id="profile-bio"></p>
+                    <a id="profile-link" href="#" target="_blank">View Profile</a>
+                </div>
+            </div>
+            <ul id="profile-stats">
+                <li>Followers: <span id="followers-count"></span></li>
+                <li>Following: <span id="following-count"></span></li>
+                <li>Public Repos: <span id="repos-count"></span></li>
+            </ul>
+        </div>
+
+        <div id="repos-list" class="hidden">
+            <h2>Repositories</h2>
+            <ul id="repo-ul">
+                </ul>
+        </div>
+
+        <p id="error-message" class="hidden"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
